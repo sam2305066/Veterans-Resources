@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        Course: CIS133DA
+        Section: 10865
+        Lesson: 14
+        -->
+    <title>Veteran Resources</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samantha Bebout">
+    <meta name="description" content="Find the assistance you are looking for; from housing, medical, or financial aid we are here to help veterans find the resources they need.">
+    <meta name="keywords" content="Veteran Housing, Financial Aid, Medial Help, VA, Help">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"></link>
+    </head>
+    <body>
+        <header>
+        <h1>Veteran Resources</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Discounts</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <h2>Resource Information Form</h2>
+            <p>Whether it&apos;s housing, medical, or other financial issue we will provide you with great resources that will help provide you with the same security you provided this country.</p>
+        <form action="https://secure.riosalado.edu/cis-sourse-resources/postscript.aspx" method="post">
+            <label for="firstname">First Name</label>
+            <input name="firstname" type="text" id="firstname"><br>
+            <label for="lastname">Last Name</label>
+            <input name="lastname" type="text" id="lastname"><br>
+            <label for="email">Email Address</label>
+            <input name="email" type="email" id="email"><br>
+            <label for="phonenumber">Phone Number</label>
+            <input name="phonenumber" type="text" id="phonenumber"><br>
+            <p>How would you prefer we get back to you?</p>
+            <label><input type="checkbox" name="contact" value="phone">Phone</label>
+            <label><input type="checkbox" name="contact" value="email">Email</label>
+            <p>What kind of assistance are you requesting?</p>
+            <label><input type="checkbox" name="servicetype" value="Housing">Housing</label>
+            <label><input type="checkbox" name="servicetype" value="Medical">Medical</label><br>
+            <label><input type="checkbox" name="servicetype" value="Financial Aid">Financial Aid</label><br>
+            <label for="addcomment">Additional Comments</label><br>
+            <textarea rows="7" cols="45" name="addcomment" id="addcomment"></textarea><br>
+            <button type="reset">Reset the form</button>
+            <button type="submit">Submit the form</button>
+        </form>
+
+        </main>
+
+    </body>
+    <footer>
+        <small>Copyright by Samantha B &copy; 2023</small>
+    </footer>
+</html>
