@@ -12,7 +12,8 @@
     <meta name="description" content="Find the assistance you are looking for; from housing, medical, or financial aid we are here to help veterans find the resources they need.">
     <meta name="keywords" content="Veteran Housing, Financial Aid, Medial Help, VA, Help">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"></link>
+    <link rel="stylesheet" media="(max-width: 450px)" href="css/mobile_styles.css">
+    <link rel="stylesheet" media="(min-width: 900px)" href="css/styles.css">
     </head>
     <body>
         <header>
@@ -23,6 +24,7 @@
                 <li><a href="http://127.0.0.1:3000/resource.html">Resources</a></li>
                 <li><a href="http://127.0.0.1:3000/discounts.html">Discounts</a></li>
                 <li><a href="http://127.0.0.1:3000/donate.html">Donate</a></li>
+                <li><a href="http://127.0.0.1:3000/policy.html">Policy</a></li>
             </ul>
         </nav>
         </header>
@@ -47,12 +49,11 @@
             <label><input type="checkbox" name="servicetype" value="Financial Aid">Financial Aid</label><br>
             <label for="addcomment">Additional Comments</label><br>
             <textarea rows="7" cols="45" name="addcomment" id="addcomment"></textarea><br>
-            <button type="reset">Reset the form</button>
-            <button type="submit">Submit the form</button>
+            <button type="reset">Reset form</button>
+            <button type="submit" onclick="formSubmit()">Submit form</button>
         </form>
-
         </main>
-
+        <script src="scripts/javascript.js"></script>
     </body>
     <footer>
         <small>Copyright by Samantha B &copy; 2023</small>
